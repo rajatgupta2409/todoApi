@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "44460746-7dce-449f-8887-e48297efd872",
+		"name": "Todo Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "todoitems",
+			"_postman_id": "a7925194-1e4f-4d8a-85ca-a7deb15b08f9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7091/todoitems"
+			},
+			"response": []
+		},
+		{
+			"name": "/todoitems",
+			"_postman_id": "be5789d4-9afc-49b1-8a4e-dfe41bf08bfb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":4,\r\n    \"Name\":\"dup2\",\r\n    \"isComplete\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7091/todoitems"
+			},
+			"response": []
+		},
+		{
+			"name": "/todoitems/{id}",
+			"_postman_id": "801ba32a-04b3-4985-be35-fd4cc28b4694",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7091/todoitems/4"
+			},
+			"response": []
+		},
+		{
+			"name": "/todoitems/{id}",
+			"_postman_id": "292f0aa8-f03a-44d5-ba35-b98a126ad047",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":10,\r\n    \"Name\":\"dup21\",\r\n    \"isComplete\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7091/todoitems/4"
+			},
+			"response": []
+		}
+	]
+}
